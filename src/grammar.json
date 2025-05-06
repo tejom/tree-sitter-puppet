@@ -69,10 +69,6 @@
           },
           {
             "type": "SYMBOL",
-            "name": "contain_statement"
-          },
-          {
-            "type": "SYMBOL",
             "name": "tag_statement"
           },
           {
@@ -114,10 +110,6 @@
           {
             "type": "SYMBOL",
             "name": "resource_reference"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "resource_like_class"
           }
         ]
       }
@@ -579,27 +571,6 @@
         }
       ]
     },
-    "resource_like_class": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "class"
-        },
-        {
-          "type": "STRING",
-          "value": "{"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_resource_block"
-        },
-        {
-          "type": "STRING",
-          "value": "}"
-        }
-      ]
-    },
     "resource_declaration": {
       "type": "SEQ",
       "members": [
@@ -815,28 +786,6 @@
         {
           "type": "STRING",
           "value": "require"
-        },
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "_identifier"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "string"
-            }
-          ]
-        }
-      ]
-    },
-    "contain_statement": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "contain"
         },
         {
           "type": "CHOICE",
@@ -3316,6 +3265,5 @@
     "literal",
     "statement",
     "type"
-  ],
-  "reserved": {}
+  ]
 }

@@ -104,10 +104,6 @@
         "named": true
       },
       {
-        "type": "contain_statement",
-        "named": true
-      },
-      {
         "type": "defined_resource_type",
         "named": true
       },
@@ -161,10 +157,6 @@
       },
       {
         "type": "resource_default",
-        "named": true
-      },
-      {
-        "type": "resource_like_class",
         "named": true
       },
       {
@@ -629,29 +621,6 @@
         },
         {
           "type": "type",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "contain_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "class_identifier",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         }
       ]
@@ -1179,32 +1148,6 @@
     }
   },
   {
-    "type": "resource_like_class",
-    "named": true,
-    "fields": {
-      "title": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "expression",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "attribute",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "resource_reference",
     "named": true,
     "fields": {},
@@ -1648,12 +1591,7 @@
   },
   {
     "type": "comment",
-    "named": true,
-    "extra": true
-  },
-  {
-    "type": "contain",
-    "named": false
+    "named": true
   },
   {
     "type": "default",
